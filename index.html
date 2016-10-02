@@ -135,7 +135,7 @@
               <section id="five">
                 <div class="container">
                   <h3>Contact Me</h3>
-                  <p>The other secction</p>
+                  <p>The other section</p>
                   <form action="https://getsimpleform.com/messages?form_api_token=d51ea070cf976e533acaaf39fb1e4018" method="post">
                   <!-- the redirect to thank them -->
                   	<input type='hidden' name='redirect_to' value='https://noahblume.github.io/thankyou' />
@@ -152,21 +152,21 @@
                     <div class="row uniform">
                       <div class="12u">
                         <ul class="actions">
-                          <li><input type="submit" class="special" value="Send Message" /></li>
+                          <li><input type="submit" class="special" value="Send Message" onclick="clickEvent();" /></li>
                           <li><input type="reset" value="Reset Form" /></li>
                         </ul>
                       </div>
                     </div>
                   </form>
                 </div>
-                <form action="https://getsimpleform.com/messages?form_api_token=d51ea070cf976e533acaaf39fb1e4018" method="post">
+              <!--  <form action="https://getsimpleform.com/messages?form_api_token=d51ea070cf976e533acaaf39fb1e4018" method="post">
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-  <input type='hidden' name='redirect_to' value='noahblume.github.io/thankyou.html' />
+  <!--<input type='hidden' name='redirect_to' value='noahblume.github.io/thankyou.html' />
   <!-- all your input fields here.... -->
-  <input type='text' name='name' />
+  <!--<input type='text' name='name' />
   <input name='message' type='text' />
   <input type='submit' value='Test form' />
-</form>
+</form> -->
               </section>
 
 						<!-- Five -->
@@ -537,6 +537,13 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+
+<script>
+function clickEvent(){
+    window.open("https://noahblume.github.io/thankyou");
+}
+</script>
 
 	</body>
 </html>
