@@ -2882,6 +2882,11 @@
 
 	@media screen and (max-width: 736px) {
 
+		/* MY COMIC */
+			#comic {
+				display: none;
+			}
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -3028,6 +3033,11 @@
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+
+		/* MY COMIC */
+			#comic {
+				display: none;
+			}
 
 		/* Basic */
 
