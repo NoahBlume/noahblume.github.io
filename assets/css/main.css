@@ -2648,6 +2648,12 @@
 
 	@media screen and (max-width: 1680px) {
 
+		.features article .image.comic {
+			display: block;
+			margin: 0 0 2.25em 0;
+			padding-right: 0;
+			width: 100%;
+		}
 		/* Basic */
 
 			body, input, select, textarea {
@@ -2686,6 +2692,13 @@
 
 	@media screen and (max-width: 1280px) {
 
+		.features article .image.comic {
+				display: block;
+				margin: 0 0 2.25em 0;
+				padding-right: 0;
+				width: 100%;
+			}
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -2713,6 +2726,13 @@
 	}
 
 	@media screen and (max-width: 1024px) {
+
+		.features article .image.comic {
+			display: block;
+			margin: 0 0 2.25em 0;
+			padding-right: 0;
+			width: 80%;
+		}
 
 		/* Basic */
 
@@ -2882,6 +2902,13 @@
 
 	@media screen and (max-width: 736px) {
 
+		.features article .image.comic {
+			display: block;
+			margin: 0 0 2.25em 0;
+			padding-right: 0;
+			width: 100%;
+		}
+
 		/* MY COMIC */
 			#comic {
 				width: 480px;
@@ -3034,6 +3061,13 @@
 
 	@media screen and (max-width: 480px) {
 
+		.features article .image.comic {
+			display: block;
+			margin: 0 0 2.25em 0;
+			padding-right: 0;
+			width: 100%;
+		}
+
 		/* MY COMIC */
 			#comic {
 				width: 480px;
@@ -3098,3 +3132,5 @@
 			}
 
 	}
+
+
