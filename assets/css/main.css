@@ -2897,23 +2897,32 @@
 			}
 
 	}
+/* Comic size*/
+	@media screen and (max-width: : 760px) {
+		.features article .image.comic {
+			display: inline-block;
+			padding-right: 2.5em;
+			vertical-align: middle;
+			width: 48%;
+		}
+
+			.features article .image.comic img {
+				display: block;
+				width: 100%;
+			}
+	}
 
 /* Small */
 
 	@media screen and (max-width: 736px) {
-
+/*	My comic
 		.features article .image.comic {
 			display: block;
 			margin: 0 0 2.25em 0;
 			padding-right: 0;
 			width: 100%;
 		}
-
-		/* MY COMIC */
-			#comic {
-				width: 480px;
-			}
-
+*/
 		/* Basic */
 
 			body, input, select, textarea {
@@ -3060,18 +3069,14 @@
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
-
+/*my comic
 		.features article .image.comic {
 			display: block;
 			margin: 0 0 2.25em 0;
 			padding-right: 0;
 			width: 100%;
 		}
-
-		/* MY COMIC */
-			#comic {
-				width: 480px;
-			}
+*/
 
 		/* Basic */
 
