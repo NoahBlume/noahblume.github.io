@@ -1983,6 +1983,17 @@
 		}
 
 /* Image */
+	#comic {
+			border-radius: 5px;
+			border: 0;
+			display: inline-block;
+			position: relative;
+		}
+
+			#comic img {
+				border-radius: 5px;
+				display: block;
+			}
 
 	.image {
 		border-radius: 5px;
@@ -2436,6 +2447,18 @@
 				width: 100%;
 			}
 
+		#comic {
+			display: inline-block;
+			padding-right: 2.5em;
+			vertical-align: middle;
+			width: 48%;
+		}
+
+			#comic img {
+				display: block;
+				width: 100%;
+			}
+
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
@@ -2648,7 +2671,7 @@
 
 	@media screen and (max-width: 1680px) {
 
-		.features article .image.comic {
+		#comic {
 			display: block;
 			margin: 0 0 2.25em 0;
 			padding-right: 0;
@@ -2692,7 +2715,7 @@
 
 	@media screen and (max-width: 1280px) {
 
-		.features article .image.comic {
+		#comic {
 				display: block;
 				margin: 0 0 2.25em 0;
 				padding-right: 0;
@@ -2727,7 +2750,7 @@
 
 	@media screen and (max-width: 1024px) {
 
-		.features article .image.comic {
+		#comic {
 			display: block;
 			margin: 0 0 2.25em 0;
 			padding-right: 0;
@@ -2897,32 +2920,12 @@
 			}
 
 	}
-/* Comic size*/
-	@media screen and (max-width: : 760px) {
-		.features article .image.comic {
-			display: inline-block;
-			padding-right: 2.5em;
-			vertical-align: middle;
-			width: 48%;
-		}
 
-			.features article .image.comic img {
-				display: block;
-				width: 100%;
-			}
-	}
 
 /* Small */
 
 	@media screen and (max-width: 736px) {
-/*	My comic
-		.features article .image.comic {
-			display: block;
-			margin: 0 0 2.25em 0;
-			padding-right: 0;
-			width: 100%;
-		}
-*/
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -2977,6 +2980,14 @@
 				padding-right: 0;
 				width: 100%;
 			}
+
+			#comic {
+				display: block;
+				margin: 0 0 2.25em 0;
+				padding-right: 0;
+				width: 100%;
+			}
+
 
 			.features article .inner {
 				display: block;
@@ -3069,14 +3080,6 @@
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
-/*my comic
-		.features article .image.comic {
-			display: block;
-			margin: 0 0 2.25em 0;
-			padding-right: 0;
-			width: 100%;
-		}
-*/
 
 		/* Basic */
 
@@ -3137,5 +3140,21 @@
 			}
 
 	}
+/* Comic size*/
+	@media screen and (max-width: : 760px) {
+		#comic {
+			display: inline-block;
+			padding-right: 0em;
+			vertical-align: middle;
+			width: 100%;
+			display: block;
+			margin: 0 0 0em 0;
+			margin-left: 2em;
+		}
 
+			#comic img {
+				display: block;
+				width: 50%;
+			}
+	}
 
