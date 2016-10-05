@@ -2754,7 +2754,7 @@
 			display: block;
 			margin: 0 0 2.25em 0;
 			padding-right: 0;
-			width: 80%;
+			width: 100%;
 		}
 
 		/* Basic */
@@ -3139,22 +3139,5 @@
 				padding: 0;
 			}
 
-	}
-/* Comic size*/
-	@media screen and (max-width: : 760px) {
-		#comic {
-			display: inline-block;
-			padding-right: 0em;
-			vertical-align: middle;
-			width: 100%;
-			display: block;
-			margin: 0 0 0em 0;
-			margin-left: 2em;
-		}
-
-			#comic img {
-				display: block;
-				width: 50%;
-			}
 	}
 
