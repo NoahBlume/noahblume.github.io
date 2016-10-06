@@ -1984,14 +1984,12 @@
 
 /* Image */
 	#comic {
-			border-radius: 5px;
 			border: 0;
 			display: inline-block;
 			position: relative;
 		}
 
 			#comic img {
-				border-radius: 5px;
 				display: block;
 			}
 
@@ -3141,3 +3139,9 @@
 
 	}
 
+		#comic {
+			display: block;
+			margin: 0 0 2.25em 0;
+			padding-right: 0;
+			width: 100%;
+		}
