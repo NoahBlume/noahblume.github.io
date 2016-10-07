@@ -2621,7 +2621,7 @@
 /* One */
 
 	#one:before {
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/cmp/banner.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: cover;
