@@ -2664,17 +2664,48 @@
 				#footer .copyright li a {
 					color: inherit;
 				}
+/* XXLarge */
+
+	@media screen and (max-width: 2560px) {
+
+		/* Basic */
+
+			body, input, select, textarea {
+				font-size: 14pt;
+			}
+
+		/* Header */
+
+			#header {
+				width: 24em;
+			}
+
+				#header > header {
+					padding: 2.5em;
+				}
+
+				#header > footer {
+					padding: 1em;
+				}
+
+		/* Wrapper */
+
+			#wrapper {
+				padding-right: 24em;
+			}
+
+		/* Main */
+
+			#main > section > .container {
+				padding: 4em 0 2em 0;
+			}
+
+	}
 
 /* XLarge */
 
-	@media screen and (max-width: 1680px) {
+	@media screen and (max-width: 1920px) {
 
-		#comic {
-			display: block;
-			margin: 0 0 2.25em 0;
-			padding-right: 0;
-			width: 100%;
-		}
 		/* Basic */
 
 			body, input, select, textarea {
@@ -2692,7 +2723,7 @@
 				}
 
 				#header > footer {
-					padding: 1.5em;
+					padding: 1em;
 				}
 
 		/* Wrapper */
@@ -2712,13 +2743,6 @@
 /* Large */
 
 	@media screen and (max-width: 1280px) {
-
-		#comic {
-				display: block;
-				margin: 0 0 2.25em 0;
-				padding-right: 0;
-				width: 100%;
-			}
 
 		/* Basic */
 
@@ -2747,13 +2771,6 @@
 	}
 
 	@media screen and (max-width: 1024px) {
-
-		#comic {
-			display: block;
-			margin: 0 0 2.25em 0;
-			padding-right: 0;
-			width: 100%;
-		}
 
 		/* Basic */
 
@@ -2979,13 +2996,6 @@
 				width: 100%;
 			}
 
-			#comic {
-				display: block;
-				margin: 0 0 2.25em 0;
-				padding-right: 0;
-				width: 100%;
-			}
-
 
 			.features article .inner {
 				display: block;
@@ -3139,9 +3149,52 @@
 
 	}
 
-		#comic {
-			display: block;
-			margin: 0 0 2.25em 0;
-			padding-right: 0;
-			width: 100%;
-		}
+	#comic {
+		display: block;
+		margin: 0 0 2.25em 0;
+		padding-right: 0;
+		width: 100%;
+	}
+
+
+/* accordion stuff */
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+	color: #777;
+	line-height: 1em;
+	font-size: 1em;
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+    margin-bottom: 15px;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
