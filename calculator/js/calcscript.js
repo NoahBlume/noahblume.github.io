@@ -2,11 +2,9 @@ jQuery(document).ready(function(){
 	resultLog = jQuery('#resultLog');
 	equation = jQuery('#equation');
 
-	updateQuotes();
-
 	jQuery('#switch').val('off');
 	updateCoinTable();
-	var updateCoinTableInterval = null; 
+	var updateCoinTableInterval = null;
 
 
 	var pemdas = [
@@ -39,7 +37,7 @@ jQuery(document).ready(function(){
 		var str = equation.val().replace(/\s/g, '');
 		var result = parseInput(str);
 
-		resultLog.append("<p>" + result + "</p>");	
+		resultLog.append("<p>" + result + "</p>");
 	}
 
 	function parseInput(str) {
@@ -49,7 +47,7 @@ jQuery(document).ready(function(){
 
 		var arr = []
 		var lastPush = -1;
-		
+
 		for(var i = 0; i < str.length; i++) {
 			var char = str.charAt(i);
 			if (isNaN(char) && char !== ".") {
@@ -74,7 +72,6 @@ jQuery(document).ready(function(){
 
 	function evaluate(arr) {
 		var stack = [];
-		console.log(arr);
 		for (var i = 0; i < arr.length; i++) {
 			var symbol = arr[i];
 			if ($.inArray(symbol, openers) > -1) {
@@ -109,7 +106,6 @@ jQuery(document).ready(function(){
 					arr[i - 2] = calculation;
 					arr.splice(i - 1, 2);
 					i -= 2;
-					console.log(arr);
 				}
 			}
 			pemdasIndex++;
@@ -146,7 +142,7 @@ jQuery(document).ready(function(){
 
 	function validParentheses(str) {
 		var stack = [];
-		
+
 		for (var i = 0; i < str.length; i++) {
 			var char = str.charAt(i);
 			if ($.inArray(char, openers) > -1) {
@@ -177,14 +173,13 @@ jQuery(document).ready(function(){
 	 });
 
 	function updateCoinTable() {
-		console.log('updated coin table');
 		$('#coinTableBody').empty();
 		$.get( "https://api.coinmarketcap.com/v1/ticker/?limit=100", function( data ) {
 		  	for (var i = 0; i < 100; i++) {
 		  		var rank = "<tr><td>" + data[i].rank + "</td>";
 		  		var name = "<td>" + data[i].name + "</td>";
 		  		var price = "<td>$" + data[i].price_usd + "</td>";
-		  		
+
 		  		var oneHr = data[i].percent_change_1h;
 		  		var twentyfourHr = data[i].percent_change_24h;
 		  		var sevenDay = data[i].percent_change_7d;
@@ -214,48 +209,5 @@ jQuery(document).ready(function(){
 		  	}
 
 		}, "json" );
-	}
-
-	function updateQuotes() {
-		var quotes = jQuery('#quotesRow').children();
-
-		$('.quote-box').each(function(i) {
-			var theQuote = getQuote(i);
-		});	
-
-	//	//$('.quote-text').each(function(i) {
-    //		jQuery(this).text("hi");
-	//	});	
-
-		/*for (var i = 0; i < 3; i++) {
-			console.log(quotes[i]);
-			quotes[i].find(".quoteText").val("hi");
-		}*/
-		
-		
-	}
-
-	function getQuote(index) {
-		$.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?")
-		    .done(update(response, index))
-		    .fail(handleErr);
-		}
-
-	function update(response, index) {
-	  $('#response').html(JSON.stringify(response));
-	  //$('#response').html(response.quoteText);
-	  //$('#response').html(response.quoteAuthor);
-	  console.log('got here');
-	  $('.quote-box').each(function(i) {
-	  		console.log('got here2, i & index:', i, index);
-	  		if (index == i) {
-	    		jQuery(this).find('.quote-text').text("hi");
-	    		jQuery(this).find('.blog-post-bottom').text("bye");
-	  		}
-		});	
-	}
-
-	function handleErr(jqxhr, textStatus, err) {
-	  	console.log("Request Failed: " + textStatus + ", " + err);
 	}
 });

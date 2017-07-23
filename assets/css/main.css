@@ -1618,6 +1618,12 @@
 		line-height: 1.5em;
 	}
 
+	h4 > small {
+		font-size : .8em;
+		font-weight: 500;
+		color: #888;
+	}
+
 	h5 {
 		font-size: 0.9em;
 		line-height: 1.5em;
@@ -2963,6 +2969,10 @@
 				font-size: 1em;
 			}
 
+			h4 > small {
+				font-size : 0.8em;
+			}
+
 		/* Image */
 
 			.image.left {
@@ -3197,4 +3207,17 @@ button.accordion:after {
 
 button.accordion.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+.articleHeader {
+	clear: both;
+}
+
+.articleTitle {
+	float : left;
+}
+
+.articleDate {
+	float: right;
 }
