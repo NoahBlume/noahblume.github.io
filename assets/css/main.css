@@ -2626,7 +2626,7 @@
 
 /* One */
 
-	#one:before {
+	#home:before {
 		background-image: url("../../images/cmp/banner.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -2848,7 +2848,7 @@
 
 		/* One */
 
-			#one:before {
+			#home:before {
 				height: 10em;
 			}
 
@@ -3052,7 +3052,7 @@
 
 		/* One */
 
-			#one:before {
+			#home:before {
 				height: 7em;
 			}
 
