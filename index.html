@@ -62,31 +62,43 @@
 					<!-- about -->
 					<section id="about">
 						<div class="container">
-							<h3>A Little Bit About Me</h3>
-							<p>Hehe... bit</p>
-							<p>
-							I am currently in my fourth semester at Georgia Tech, where I am majoring in computer science. I am a member of Grey H@t (the information security club) and the CTF club.
+							<h3>A Little Bit About Me <!-- <small>&nbsp;&nbsp;&nbsp;Hehe... bit</small> --></h3>
+
+                            <h4>General Info</h4>
+                            <p>
+							I am currently in my fifth semester at Georgia Tech, where I am majoring in computer science. I am a member of Grey H@t (the information security club) and the CTF club.
 							</p>
 
 							<p>
-							As far as programming languages go, I'm most familiar with Java, Python, C, C#, and JavaScript. I also have experience using CSS, HTML, and Bootstrap. I have worked on a few video games in Unity3D. I've also written a few Python scripts to automate tasks for me.
+							As far as programming languages go, I'm most familiar with Java, Python, C, C#, and JavaScript. I also have experience using CSS, HTML, AngularJS, jQuery, and Bootstrap. In my spare time I have worked on a few video games in Unity, created a couple of websites, and written various Python scripts to automate tasks for me.
+
+                            <h4>Internships</h4>
+							<p>
+                            This past summer, I worked at First Data as a software development intern. I created an application monitoring UI, giving developers quick access to important information regarding the status of applications. The monitoring application gets a list of apps from a (Netflix) Eureka service registry and pulls information from the Spring Boot Actuator endpoints of each registered application. The application stored metrics values in a SQL database; these values were used to generate charts displaying a historical overview of the metrics.
+                            </p>
+
+                            <p>
+							Summer of 2017, I worked at Central Technology Services (under Central Bancompany) as a software development intern. I developed bug fixes for their website and created a web application backed by a SQL database to store and manage properties that are used by the bank's mobile apps. Developers can manage the properties through the web application, and the mobile app makes an API request to get the correct properties from the database for that version of the app. I also updated their Android app to use Google Maps API v2, and refactored the app to reduce duplicate code and use Android’s “Product Flavors” instead of separate projects for different app versions.
 							</p>
 
-							<p>
-							This past summer, I worked at Central Technology Services (under Central Bancompany) as a software development intern. I developed bug fixes for their website and created a web application backed by a SQL database to store and manage properties that are used by the bank's mobile apps. Developers can manage the properties through the web application, and the mobile app makes an API request to get the correct properties from the database for that version of the app. I also updated their Android app to use Google Maps API v2, and refactored the app to reduce duplicate code and use Android’s “Product Flavors” instead of separate projects for different app versions.
-							</p>
+                            <h4>Additional Experience</h4>
+                            <p>
+                            Last spring, I was a teaching assistant for CS 2050 (Discrete Math). This fall, I will be a teaching assistant for CS 3510 (Design and Analysis of Algorithms). As a TA I lead recitation sections with my Co-TAs and hold office hours to help students better understand the concepts from lecture. I'm also responsible for grading exams and homework to provide helpful feedback for students.
+                            </p>
 
-							<p>
-							Going forward, I hope to learn a lot more about information security and become involved in more programming projects at Georgia Tech. In the coming years I am also hoping to gain more real world experience through additional internships.
-							</p>
-							<ul class="feature-icons">
+                            <p>
+                            During my first few semesters at Tech, I worked as a technical assistant at the Georgia Tech College of Computing TSO Help Desk. At the Help Desk I was responsible for assisting anyone who came in with any kind of computer trouble. I also had to frequently reimage and install software on computers.
+                            </p>
+
+
+							<!-- <ul class="feature-icons">
 								<li class="fa-coffee">Experience with Java, Python, and C#</li>
 								<li class="fa-mobile-phone">Published 2 mobile games</li>
 								<li class="fa-android">Developed Android applications</li>
 								<li class="fa-lock">Participated in CTF competitions</li>
 								<li class="fa-database">Worked on applications backed by SQL databases</li>
 								<li class="fa-file-code-o">Experience with web applications using the Spring Framework</li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 
@@ -94,63 +106,21 @@
 					<section id="projects">
 						<div class="container">
 							<h3>Projects I've Worked On</h3>
-							<p>Here are a few projects I've worked on. If you would like to view the code, many of the projects have a Github link provided. You are also welcome to visit my <a href="https://github.com/NoahBlume">GitHub page</a> to see other projects I have worked on.</p>
+							<p>Here are a few projects I've worked on. If you would like to view the code, many of the projects have a GitHub link provided. You are also welcome to visit my <a href="https://github.com/NoahBlume">GitHub page</a> to see other projects I have worked on.</p>
 							<div class="features">
-
-                                <button class="accordion">Video Games</button>
-                                <div class="panel">
-                                    <article>
-                                        <a class="image"><img src="images/cmp/hoppyFroggy.png" alt="" /></a>
-                                        <div class="inner">
-                                            <h4>Hoppy Froggy <small>(2017)</small></h4>
-                                            <p>This is a clone of Frogger for the Game Boy Advance that I made for one of my classes, CS 2110. It is programmed in C, and can be played using the VisualBoyAdvance emulator. Download links are provided below.</p>
-                                            <ul class="icons">
-                                                <li>
-                                                    <a href="Frogger.gba" target="_blank" class="icon fa-gamepad"> Hoppy Froggy Download</a>
-                                                </li>
-                                                <li>
-                                                    <a href="VisualBoyAdvance-1.8.0-511.exe" target="_blank" class="icon fa-desktop"> VisualBoyAdvance Emulator (Windows) Download</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <a class="image"><img src="images/cmp/bnbc.png" alt="" /></a>
-                                        <div class="inner">
-                                            <h4>Blocks and Balls <small>(2015)</small></h4>
-                                            <p>This is the first app I published to the App Store and Google Play Store with my cousin. We worked on it during the beginning of 2015 and published it that summer. It is a really simple mobile game about hitting blocks with balls.</p>
-                                            <ul class="icons">
-                                                <li><a href="https://github.com/NoahBlume/blocksAndBalls" target="_blank" class="icon fa-github"> Blocks and Balls GitHub</a></li>
-                                                <li><a href="https://play.google.com/store/apps/details?id=com.Onyx.BlocksandBalls&hl=en" target="_blank" class="icon fa-android"> Google Play Store Listing</a></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <a class="image"><img src="images/cmp/pgp2.png" alt="" /></a>
-                                        <div class="inner">
-                                            <h4>Procedurally Generated Platformer <small>(2015)</small></h4>
-                                            <p>I had a ton of fun making this. My cousin and I decided to spend part of our 2015 Thanksgiving break creating a procedurally generated platformer in 48 hours. It is not a fully functional game, however we were able to get the main gameplay mechanics and basic procedural generation finished.</p>
-                                            <ul class="icons">
-                                                <li><a href="https://github.com/NoahBlume/procedurallyGeneratedPlatformer" target="_blank" class="icon fa-github"> Procedurally Generated Platformer GitHub</a></li>
-                                                <li><a href="https://www.youtube.com/watch?v=WrGJRUN5RSI&feature=youtu.be" target="_blank" class="icon fa-youtube"> Video Demonstration</a></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <a class="image"><img src="images/cmp/bnbuc.png" alt="" /></a>
-                                        <div class="inner">
-                                            <h4>Blocks and Balls: Unblocked <small>(2016)</small></h4>
-                                            <p>This is the sequel to Blocks and Balls. In early 2016, my cousin and I rebuilt the original game from the ground up to make it run better, then we added unlockable (or "unblockable") colors that you could chose from for the blocks and balls.</p>
-                                            <ul class="icons">
-                                                <li><a href="https://github.com/NoahBlume/blocksAndBallsUnblocked" target="_blank" class="icon fa-github"> Blocks and Balls: Unblocked GitHub</a></li>
-                                                <li><a href="https://play.google.com/store/apps/details?id=com.onyxgames.BlocksAndBallsMIT&hl=en#details-reviews" target="_blank" class="icon fa-android"> Google Play Store Listing</a></li>
-                                            </ul>
-                                        </div>
-                                    </article>
-                                </div>
 
 								<button class="accordion">Website Projects</button>
 								<div class="panel">
+                                    <article>
+                                        <a class="image"><img src="images/cmp/playlistGenerator.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>Playlist Generator <small>(2018)</small></h4>
+                                            <p>This is a site I made to generate playlists based on your music interests. I liked Spotify's Weekly Discovery playlist, but wanted to have more than just one playlist per week, so I made a site to generate them for me. The site tries to make a playlist with artists you haven't listened to yet who are similar to artists you already like.</p>
+                                            <ul class="icons">
+                                                <li><a href="https://discoveryplaylist.com/" class="icon fa-music"> Playlist Generator</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
 									<article>
 										<a class="image"><img src="images/cmp/mobilesafewalk.png" alt="" /></a>
 										<div class="inner">
@@ -183,18 +153,28 @@
 									</article>
 								</div>
 
-								<button class="accordion">Python Scripts</button>
+								<button class="accordion">Python Projects</button>
 								<div class="panel">
-									<article>
-										<a class="image"><img src="images/cmp/printerChecker.png" alt="" /></a>
-										<div class="inner">
-											<h4>Printer Paper Supply Checker <small>(2016)</small></h4>
-											<p>This is a Python script I wrote to automatically check the paper supply of printers where I work. Each of the 10 printers has a site that displays the paper levels. To check the paper levels, one would normally have to log into each of the 10 sites and record each printer's paper level before going out to restock the paper. This was rather tedious and time consuming, so I wrote a Python script that logs into and scrapes all of the websites to check the paper levels. The script then updates a Google spreadsheet with how many reams of paper each printer needs.</p>
-											<ul class="icons">
-												<li><a href="https://github.com/NoahBlume/printerPaperSupplyChecker" target="_blank" class="icon fa-github"> Printer Paper Supply Checker GitHub</a></li>
-											</ul>
-										</div>
-									</article>
+                                    <article>
+                                        <a class="image"><img src="images/cmp/shortenThis.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>Reddit Summarizer Bot <small>(2018)</small></h4>
+                                            <p>This is a Reddit bot I made that will summarize long comments or posts. A user can reply to a comment or a post with "ShortenThis!" and the bot will create a shortened version of the original post. The default length of the summary is 5 sentences, but one can specify a custom number of sentences. For example, "ShortenThis! 10" will make a summary of 10 sentences. The bot is written in Python, using the PRAW library as a wrapper for the Reddit API and the Sumy library for handling summarization. It is hosted on a Google Compute Engine instance, where it regularly checks for new summary requests.</p>
+                                            <ul class="icons">
+                                                <li><a href="https://reddit.com/user/ShortenThis_Bot" target="_blank" class="icon fa-reddit"> View /u/ShortenThis_Bot</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a class="image"><img src="images/cmp/indieheads.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>/r/indieheads New Music Bot <small>(2018)</small></h4>
+                                            <p>This is a Reddit bot I made that will send a notification whenever a post for new music on r/indieheads passes a certain point threshold. Users can be notified via Reddit PM, email, or both. Users are also able to set the point threshold to whatever they like. This bot is also written in Python using the PRAW library and is hosted on a Google Compute Engine instance.</p>
+                                            <ul class="icons">
+                                                <li><a href="https://reddit.com/user/IndieheadsFresh_Bot" target="_blank" class="icon fa-reddit"> View /u/IndieheadsFresh_Bot <br />(the pinned post explains how to subscribe)</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
 									<article>
 										<a class="image"><img src="images/cmp/nobot.jpg" alt="" /></a>
 										<div class="inner">
@@ -225,7 +205,85 @@
 											</ul>
 										</div>
 									</article>
+                                    <article>
+                                        <a class="image"><img src="images/cmp/printerChecker.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>Printer Paper Supply Checker <small>(2016)</small></h4>
+                                            <p>This is a Python script I wrote to automatically check the paper supply of printers where I work. Each of the 10 printers has a site that displays the paper levels. To check the paper levels, one would normally have to log into each of the 10 sites and record each printer's paper level before going out to restock the paper. This was rather tedious and time consuming, so I wrote a Python script that logs into and scrapes all of the websites to check the paper levels. The script then updates a Google spreadsheet with how many reams of paper each printer needs.</p>
+                                            <ul class="icons">
+                                                <li><a href="https://github.com/NoahBlume/printerPaperSupplyChecker" target="_blank" class="icon fa-github"> Printer Paper Supply Checker GitHub</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
 								</div>
+
+                                <button class="accordion">Video Games</button>
+                                <div class="panel">
+                                    <article>
+                                        <a class="image"><img src="images/cmp/hoppyFroggy.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>Hoppy Froggy <small>(2017)</small></h4>
+                                            <p>This is a clone of Frogger for the Game Boy Advance that I made for one of my classes, CS 2110. It is programmed in C, and can be played using the VisualBoyAdvance emulator. Download links are provided below.</p>
+                                            <ul class="icons">
+                                                <li>
+                                                    <a href="Frogger.gba" target="_blank" class="icon fa-gamepad"> Hoppy Froggy Download</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://github.com/visualboyadvance-m/visualboyadvance-m/releases" target="_blank" class="icon fa-desktop"> VisualBoyAdvance Emulator Download (Windows & Mac)</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a class="image"><img src="images/cmp/bnbc.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>Blocks and Balls <small>(2015)</small></h4>
+                                            <p>This is the first app I published to the App Store and Google Play Store with my cousin. We worked on it during the beginning of 2015 and published it that summer. It is a really simple mobile game about hitting blocks with balls.</p>
+                                            <ul class="icons">
+                                                <li><a href="https://github.com/NoahBlume/blocksAndBalls" target="_blank" class="icon fa-github"> Blocks and Balls GitHub</a></li>
+                                                <li><a href="https://play.google.com/store/apps/details?id=com.Onyx.BlocksandBalls&hl=en" target="_blank" class="icon fa-android"> Google Play Store Listing</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a class="image"><img src="images/cmp/pgp2.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>Procedurally Generated Platformer <small>(2015)</small></h4>
+                                            <p>I had a ton of fun making this. My cousin and I decided to spend part of our 2015 Thanksgiving break creating a procedurally generated platformer in 48 hours. It is not a fully functional game; however, we were able to get the main gameplay mechanics and basic procedural generation finished.</p>
+                                            <ul class="icons">
+                                                <li><a href="https://github.com/NoahBlume/procedurallyGeneratedPlatformer" target="_blank" class="icon fa-github"> Procedurally Generated Platformer GitHub</a></li>
+                                                <li><a href="https://www.youtube.com/watch?v=WrGJRUN5RSI&feature=youtu.be" target="_blank" class="icon fa-youtube"> Video Demonstration</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a class="image"><img src="images/cmp/bnbuc.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>Blocks and Balls: Unblocked <small>(2016)</small></h4>
+                                            <p>This is the sequel to Blocks and Balls. In early 2016, my cousin and I rebuilt the original game from the ground up to make it run better, then we added unlockable (or "unblockable") colors that you could choose from for the blocks and balls.</p>
+                                            <ul class="icons">
+                                                <li><a href="https://github.com/NoahBlume/blocksAndBallsUnblocked" target="_blank" class="icon fa-github"> Blocks and Balls: Unblocked GitHub</a></li>
+                                                <li><a href="https://play.google.com/store/apps/details?id=com.onyxgames.BlocksAndBallsMIT&hl=en#details-reviews" target="_blank" class="icon fa-android"> Google Play Store Listing</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <button class="accordion">Fun</button>
+                                <div class="panel">
+                                    <article>
+                                        <a class="image"><img src="images/cmp/firefoxAddOn.png" alt="" /></a>
+                                        <div class="inner">
+                                            <h4>Elon Musk Text Replacement Firefox Add-on <small>(2018)</small></h4>
+                                            <p>This is a simple Firefox add-on I made that replaces "Elon Musk" with "Grimes' boyfriend" in your browser. I created this shortly after it was discovered that Elon Musk was dating the singer, songwriter, record producer, and visual artist known as Grimes.</p>
+                                            <ul class="icons">
+                                                <li><a href="https://addons.mozilla.org/en-US/firefox/addon/elon-musk-to-grimes-boyfriend/" target="_blank" class="icon fa-firefox"> Add-on Download Link</a></li>
+                                                <li><a href="https://twitter.com/chillmage/status/994306139444711424?s=19" target="_blank" class="icon fa-twitter"> Inspired by this tweet</a></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+
 
 							</div>
 						</div>
